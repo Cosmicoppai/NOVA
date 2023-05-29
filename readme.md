@@ -72,7 +72,7 @@ NovaOS has several notable features:
 ## Screenshot
 
 <p align="center">
-<img src="doc/screenshots/desktop.png" />
+<img src="doc/screenshots/Desktop.png" />
 <br>
 NovaOS applications running on Linux
 </p>
