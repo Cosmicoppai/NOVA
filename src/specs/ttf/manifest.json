@@ -1,0 +1,9 @@
+{
+    "$schema": "https://schemas.cute.engineering/stable/cutekit.manifest.component.v1",
+    "id": "ttf-spec",
+    "type": "lib",
+    "description": "TrueType font specification",
+    "requires": [
+        "karm-base"
+    ]
+}

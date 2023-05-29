@@ -1,0 +1,11 @@
+{
+    "$schema": "https://schemas.cute.engineering/stable/cutekit.manifest.component.v1",
+    "id": "karm-gfx",
+    "type": "lib",
+    "description": "A graphics library",
+    "requires": [
+        "karm-media",
+        "karm-math",
+        "karm-text"
+    ]
+}

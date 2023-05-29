@@ -1,0 +1,50 @@
+{
+    "title": "Welcome to NovaOS",
+    "subtitle": "Select your form factor",
+    "entries": [
+        {
+            "icon": "cellphone",
+            "name": "Mobile",
+            "kernel": {
+                "url": "bundle://hjert/_bin",
+                "props": {}
+            },
+            "blobs": [
+                "bundle://system-srv/_bin",
+                {
+                    "url": "bundle://shell-app/_bin",
+                    "props": {
+                        "form-factor": "mobile"
+                    }
+                }
+            ]
+        },
+        {
+            "icon": "laptop",
+            "name": "Desktop",
+            "kernel": {
+                "url": "bundle://hjert/_bin",
+                "props": {}
+            },
+            "blobs": [
+                "bundle://system-srv/_bin",
+                {
+                    "url": "bundle://shell-app/_bin",
+                    "props": {
+                        "form-factor": "desktop"
+                    }
+                }
+            ]
+        },
+        {
+            "icon": "console",
+            "name": "Headless",
+            "kernel": {
+                "url": "bundle://hjert/_bin"
+            },
+            "blobs": [
+                "bundle://system-srv/_bin"
+            ]
+        }
+    ]
+}

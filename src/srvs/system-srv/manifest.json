@@ -1,0 +1,15 @@
+{
+    "$schema": "https://schemas.cute.engineering/stable/cutekit.manifest.component.v1",
+    "id": "system-srv",
+    "type": "exe",
+    "description": "Main system service responsible for managing other services",
+    "enableIf": {
+        "sys": [
+            "skift"
+        ]
+    },
+    "requires": [
+        "karm-main",
+        "karm-gfx"
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "$schema": "https://schemas.cute.engineering/stable/cutekit.manifest.component.v1",
+    "id": "limine-spec",
+    "type": "lib",
+    "description": "The limine boot protocol",
+    "requires": [
+        "karm-base"
+    ]
+}

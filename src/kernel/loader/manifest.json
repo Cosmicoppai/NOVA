@@ -1,0 +1,17 @@
+{
+    "$schema": "https://schemas.cute.engineering/stable/cutekit.manifest.component.v1",
+    "id": "loader",
+    "description": "A simple and configurable bootloader",
+    "type": "exe",
+    "enableIf": {
+        "sys": [
+            "efi"
+        ]
+    },
+    "requires": [
+        "karm-ui",
+        "karm-main",
+        "loader-impl",
+        "json-spec"
+    ]
+}

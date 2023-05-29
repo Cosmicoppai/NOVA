@@ -1,0 +1,6 @@
+.cutekit/
+__pycache__/
+.vscode/
+.DS_Store
+.python-version
+.idea

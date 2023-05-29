@@ -1,0 +1,14 @@
+{
+    "$schema": "https://schemas.cute.engineering/stable/cutekit.manifest.component.v1",
+    "id": "stdcpp-host",
+    "type": "lib",
+    "description": "Placeholder for the host stdc library",
+    "enableIf": {
+        "host": [
+            true
+        ]
+    },
+    "provides": [
+        "stdcpp"
+    ]
+}

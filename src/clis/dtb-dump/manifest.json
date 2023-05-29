@@ -1,0 +1,10 @@
+{
+    "$schema": "https://schemas.cute.engineering/stable/cutekit.manifest.component.v1",
+    "id": "dtb-dump",
+    "type": "exe",
+    "description": "Dump a device tree blob",
+    "requires": [
+        "karm-main",
+        "device-tree-spec"
+    ]
+}

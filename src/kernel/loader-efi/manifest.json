@@ -1,0 +1,18 @@
+{
+    "$schema": "https://schemas.cute.engineering/stable/cutekit.manifest.component.v1",
+    "id": "loader-efi",
+    "type": "lib",
+    "description": "Efi implementation of kernel loading",
+    "enableIf": {
+        "sys": [
+            "efi"
+        ]
+    },
+    "requires": [
+        "hal",
+        "karm-logger"
+    ],
+    "provides": [
+        "loader-impl"
+    ]
+}

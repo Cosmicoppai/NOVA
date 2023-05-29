@@ -1,0 +1,9 @@
+{
+    "$schema": "https://schemas.cute.engineering/stable/cutekit.manifest.component.v1",
+    "id": "hello-world",
+    "type": "exe",
+    "description": "Greets the world",
+    "requires": [
+        "karm-main"
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "$schema": "https://schemas.cute.engineering/stable/cutekit.manifest.component.v1",
+    "id": "crts-x86_64",
+    "type": "lib",
+    "description": "CRTS for x86_64",
+    "enableIf": {
+        "sys": [
+            "skift"
+        ]
+    },
+    "provides": [
+        "crts"
+    ]
+}

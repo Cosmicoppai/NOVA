@@ -1,0 +1,9 @@
+{
+    "$schema": "https://schemas.cute.engineering/stable/cutekit.manifest.component.v1",
+    "id": "jpeg-spec",
+    "type": "lib",
+    "description": "JPEG image format specification",
+    "requires": [
+        "karm-base"
+    ]
+}

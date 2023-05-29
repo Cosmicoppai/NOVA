@@ -1,0 +1,75 @@
+{
+    "$schema": "https://schemas.cute.engineering/stable/cutekit.manifest.target.v1",
+    "id": "skift-x86_64",
+    "type": "target",
+    "props": {
+        "toolchain": "clang",
+        "arch": "x86_64",
+        "sys": "skift",
+        "abi": "sysv",
+        "encoding": "utf8",
+        "freestanding": false,
+        "host": false,
+        "karm-sys-encoding": "utf8",
+        "karm-sys-line-ending": "lf",
+        "karm-sys-path-separator": "slash",
+        "karm-cli-backend": "ansi"
+    },
+    "routing": {
+        "stdc-math": "stdc-math-musl"
+    },
+    "tools": {
+        "cc": {
+            "cmd": [
+                "@latest",
+                "clang"
+            ],
+            "args": [
+                "-target",
+                "x86_64-none-elf"
+            ]
+        },
+        "cxx": {
+            "cmd": [
+                "@latest",
+                "clang++"
+            ],
+            "args": [
+                "-target",
+                "x86_64-none-elf"
+            ]
+        },
+        "ld": {
+            "cmd": [
+                "@latest",
+                "ld.lld"
+            ],
+            "args": [
+                "-m",
+                "elf_x86_64",
+                "-Tmeta/targets/skift-x86_64.ld",
+                "-z",
+                "max-page-size=0x1000"
+            ],
+            "files": [
+                "meta/targets/skift-x86_64.ld"
+            ]
+        },
+        "ar": {
+            "cmd": [
+                "@latest",
+                "llvm-ar"
+            ],
+            "args": [
+                "rcs"
+            ]
+        },
+        "as": {
+            "cmd": "nasm",
+            "args": [
+                "-f",
+                "elf64"
+            ]
+        }
+    }
+}
